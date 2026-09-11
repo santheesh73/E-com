@@ -1,0 +1,58 @@
+import type { Category } from '../types';
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'audio',
+    name: 'Spatial Audio',
+    iconName: 'Headphones',
+    tagline: 'Lossless acoustics & ANC',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80',
+    itemCount: 24,
+    gradient: 'from-purple-600 to-indigo-600',
+  },
+  {
+    id: 'wearables',
+    name: 'Wearables',
+    iconName: 'Watch',
+    tagline: 'Titanium chassis & biosensors',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80',
+    itemCount: 18,
+    gradient: 'from-cyan-500 to-blue-600',
+  },
+  {
+    id: 'footwear',
+    name: 'Next-Gen Kicks',
+    iconName: 'Footprints',
+    tagline: 'Carbon plates & cushioned boost',
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80',
+    itemCount: 32,
+    gradient: 'from-rose-500 to-orange-500',
+  },
+  {
+    id: 'electronics',
+    name: 'Cyber Gadgets',
+    iconName: 'Smartphone',
+    tagline: 'Flagship silicon & foldable screens',
+    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=80',
+    itemCount: 45,
+    gradient: 'from-amber-500 to-pink-600',
+  },
+  {
+    id: 'gaming',
+    name: 'Pro Gaming',
+    iconName: 'Gamepad2',
+    tagline: 'Rapid-trigger mechanical & 360Hz',
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80',
+    itemCount: 28,
+    gradient: 'from-emerald-500 to-teal-700',
+  },
+  {
+    id: 'streetwear',
+    name: 'Neo Streetwear',
+    iconName: 'Shirt',
+    tagline: 'Techwear, windbreakers & oversized hoodies',
+    image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80',
+    itemCount: 39,
+    gradient: 'from-violet-600 to-fuchsia-600',
+  },
+];
