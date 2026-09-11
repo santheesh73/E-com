@@ -10,7 +10,8 @@ import {
   Package, 
   Sparkles,
   ArrowRight,
-  Flame
+  Flame,
+  User
 } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -40,6 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     setIsCartOpen, 
     setIsWishlistOpen, 
     setIsOrderTrackingOpen,
+    setIsProfileOpen,
     openQuickView,
     formatPrice
   } = useCart();
@@ -89,10 +91,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'all', name: 'All Drops' },
     { id: 'audio', name: 'Audio' },
     { id: 'wearables', name: 'Wearables' },
-    { id: 'footwear', name: 'Kicks' },
     { id: 'electronics', name: 'Gadgets' },
-    { id: 'gaming', name: 'Gaming' },
-    { id: 'streetwear', name: 'Streetwear' },
+    { id: 'footwear', name: 'Kicks' },
   ];
 
   return (
@@ -333,14 +333,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </div>
 
-            {/* Order Tracking */}
+            {/* User Profile Button */}
             <button
-              onClick={() => setIsOrderTrackingOpen(true)}
-              className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors relative"
-              aria-label="Track Orders"
-              title="My Orders & Tracking"
+              onClick={() => setIsProfileOpen(true)}
+              className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors relative group"
+              aria-label="User Profile"
+              title="My Account & Profile"
             >
-              <Package className="w-5 h-5" />
+              <User className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <span className="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-gray-900" />
             </button>
 
             {/* Wishlist Button */}
@@ -476,15 +477,24 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
             <button
               onClick={() => {
+                setIsProfileOpen(true);
+                setMobileMenuOpen(false);
+              }}
+              className="flex items-center gap-1.5 py-1 text-purple-600 dark:text-cyan-400 font-bold"
+            >
+              <User className="w-4 h-4" /> My Profile
+            </button>
+            <button
+              onClick={() => {
                 setIsOrderTrackingOpen(true);
                 setMobileMenuOpen(false);
               }}
-              className="flex items-center gap-1.5 py-1 text-purple-600 dark:text-cyan-400 font-medium"
+              className="flex items-center gap-1.5 py-1 text-gray-600 dark:text-gray-300 font-medium hover:text-purple-600"
             >
-              <Package className="w-4 h-4" /> Track Existing Orders
+              <Package className="w-4 h-4" /> Track Orders
             </button>
             <span className="flex items-center gap-1 text-amber-500 font-medium">
-              <Sparkles className="w-3.5 h-3.5" /> 20% OFF: SATRO20
+              <Sparkles className="w-3.5 h-3.5" /> SATRO20
             </span>
           </div>
         </div>

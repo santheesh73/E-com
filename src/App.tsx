@@ -18,6 +18,7 @@ import { CartDrawer } from './components/cart/CartDrawer';
 import { WishlistDrawer } from './components/cart/WishlistDrawer';
 import { CheckoutModal } from './components/checkout/CheckoutModal';
 import { OrderTrackingModal } from './components/orders/OrderTrackingModal';
+import { UserProfileModal } from './components/profile/UserProfileModal';
 import { ToastContainer } from './components/common/ToastContainer';
 
 const SatroApp: React.FC = () => {
@@ -102,6 +103,7 @@ const SatroApp: React.FC = () => {
       <WishlistDrawer />
       <CheckoutModal />
       <OrderTrackingModal />
+      <UserProfileModal />
       <LiveActivity />
       <ToastContainer />
     </div>

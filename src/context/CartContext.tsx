@@ -62,6 +62,8 @@ interface CartContextType {
   setIsCheckoutOpen: (open: boolean) => void;
   isOrderTrackingOpen: boolean;
   setIsOrderTrackingOpen: (open: boolean) => void;
+  isProfileOpen: boolean;
+  setIsProfileOpen: (open: boolean) => void;
   // Orders
   orders: Order[];
   createOrder: (address: ShippingAddress, paymentMethod: Order['paymentMethod']) => Order;
@@ -120,6 +122,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [isOrderTrackingOpen, setIsOrderTrackingOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   // Toasts
   const [toasts, setToasts] = useState<Toast[]>([]);
@@ -351,6 +354,8 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsCheckoutOpen,
         isOrderTrackingOpen,
         setIsOrderTrackingOpen,
+        isProfileOpen,
+        setIsProfileOpen,
         orders,
         createOrder,
         lastOrder,
