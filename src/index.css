@@ -210,20 +210,17 @@ html.red-light .text-indigo-600 {
   color: #dc2626 !important;
 }
 
-html.red-light .text-purple-400,
-html.red-light .text-purple-300 {
+html.red-light .text-purple-400 {
   color: #ef4444 !important;
+}
+
+html.red-light .text-purple-300 {
+  color: #fca5a5 !important;
 }
 
 html.red-light .text-purple-800,
 html.red-light .text-purple-900 {
   color: #991b1b !important;
-}
-
-html.red-light .text-cyan-400,
-html.red-light .text-cyan-500,
-html.red-light .text-cyan-600 {
-  color: #e11d48 !important;
 }
 
 /* Background Colors */
@@ -405,9 +402,13 @@ html.red-light .to-cyan-50\/80 {
 }
 
 html.red-light .from-purple-950 {
-  --tw-gradient-from: #4c0519 var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgb(76 5 25 / 0) var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  --tw-gradient-from: #3b0707 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #2a0808 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #2a0808 !important;
+}
+
+html.red-light .to-indigo-950 {
+  --tw-gradient-to: #2a0808 var(--tw-gradient-to-position) !important;
 }
 
 html.red-light .via-indigo-950\/20 {
@@ -415,13 +416,13 @@ html.red-light .via-indigo-950\/20 {
 }
 
 html.red-light .from-purple-900 {
-  --tw-gradient-from: #881337 var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgb(136 19 55 / 0) var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  --tw-gradient-from: #500724 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #1f040e var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #1f040e !important;
 }
 
 html.red-light .via-indigo-950 {
-  --tw-gradient-stops: var(--tw-gradient-from), #4c0519 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #3b0707 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
 }
 
 /* Animations & Pings in Red Light */
