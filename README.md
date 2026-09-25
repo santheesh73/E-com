@@ -13,7 +13,8 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 ## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` & editing `.oxlintrc.json`:
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` & editing 
+
 
 ```json
 {
