@@ -45,6 +45,7 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 <br>
 
+<sub>Developed for the Education purpose</sub><br>
 <sub>Crafted with care by <a href="https://github.com/santheesh73"><b>Santheesh S</b></a></sub>
 
 </div>
